@@ -1,0 +1,9 @@
+inline double OptReaction::dMdC
+(
+    const unsigned int ri,
+    const unsigned int cj
+) const noexcept
+{
+    return this->ThirdBodyFactor1D[ri*nSpecies+cj];
+}
+

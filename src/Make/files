@@ -1,0 +1,6 @@
+odeChemistrySolvers.C
+dataBlock/dataBlock.C
+dataBlock/simpleDataBlock/simpleDataBlock.C
+
+LIB = $(FOAM_USER_LIBBIN)/libFastChemistryModel
+
