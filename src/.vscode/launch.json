@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "setup environment",
+            "program": "/home/czx/OpenFOAM/OpenFOAM-10/platforms/linux64GccDPInt32Opt/bin/chemFoam",
+            "args": [],
+            "stopAtEntry": false,
+            //"cwd": "${workspaceFolder}/../tutorial/counterFlowFlame2D_GRI30_OptSeulex",
+            "cwd": "/home/czx/OpenFOAM/myCode/myChemistryModel_V4/tutorial_clean/Ignition0D/CH4_GRI30",
+            "environment": 
+            [
+
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
