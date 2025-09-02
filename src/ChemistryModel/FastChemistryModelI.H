@@ -33,7 +33,7 @@ Foam::FastChemistryModel<ThermoType>::nSpecie() const
 }
 
 template<class ThermoType>
-inline Foam::PtrList<Foam::DimensionedField<Foam::scalar, Foam::volMesh>>&
+inline Foam::PtrList<Foam::volScalarField>&
 Foam::FastChemistryModel<ThermoType>::RR()
 {
     return RR_;
@@ -75,7 +75,7 @@ template<class ThermoType>
 inline const Foam::DimensionedField<Foam::scalar, Foam::volMesh>&
 Foam::FastChemistryModel<ThermoType>::RR(const label i) const
 {
-    return RR_[i];
+    return RR_[i].internalField();
 }
 
 
@@ -83,7 +83,7 @@ template<class ThermoType>
 Foam::DimensionedField<Foam::scalar, Foam::volMesh>&
 Foam::FastChemistryModel<ThermoType>::RR(const label i)
 {
-    return RR_[i];
+    return RR_[i].ref();
 }
 
 

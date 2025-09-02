@@ -216,7 +216,7 @@ private:
 
         //- Write access to chemical source terms
         //  (e.g. for multi-chemistry model)
-        inline PtrList<volScalarField::Internal>& RR();
+        inline PtrList<volScalarField>& RR();
 
         //- Solve the reaction system for the given time step
         //  of given type and return the characteristic time
